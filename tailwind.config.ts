@@ -9,8 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        cyberpunk:{
+          blk: '#080A0C',
+          tqs: '#00F5D4',
+          ylw: '#FFD700',
+          ble: '#00A3FF',
+          wht: '#E0E0E0'
+        }
       },
     },
   },
