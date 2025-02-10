@@ -1,6 +1,7 @@
 import { DownloadButton, GlitchText } from "@/components";
 import {orbitron, shareTechMono} from '@/app/layout'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,8 +27,31 @@ export default function Home() {
                  <p className="mx-auto text-sm mt-4 border-l-4 pl-2 border-cyberpunk-tqs">Soy una persona creativa y comprometida, con gran capacidad de adaptación y trabajo en equipo. Me apasiona la edición de video y la fotografía, donde encuentro la oportunidad de contar historias visuales de manera impactante. Disfruto aportar ideas innovadoras y siempre estoy abierto a nuevas perspectivas. Enfrento los desafíos con creatividad, buscando soluciones que potencien cada proyecto y lo lleven al siguiente nivel.</p>
             </div>
         </section>
-        <section>
-          
+        <section className="mt-24 flex flex-col items-center" id='proyects'>
+          <GlitchText className={`text-6xl ${shareTechMono.className} uppercase`}> Mis Proyectos</GlitchText>
+          <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
+            <div className="bg-cyberpunk-tqs  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
+              <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
+              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
+              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
+            </div>
+            <div className="bg-cyberpunk-ylw  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
+              <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
+              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
+              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
+            </div>
+            <div className="bg-cyberpunk-ble  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
+              <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
+              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
+              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
+            </div>
+            <div className="bg-cyberpunk-wht  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
+              <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
+              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
+              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
+            </div>
+          </div>
+           
         </section>
       </main>
     </div>

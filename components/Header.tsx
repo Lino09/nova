@@ -9,9 +9,9 @@ const Header = () => (
       <Link href="#tops">
         <GlitchText className="inline">Ian De Nova</GlitchText>    
       </Link>
-      <Link href="#aboutme">Sobre Mi</Link>
-      <Link href="#tops">Proyectos</Link>
-      <Link href="#tops">Contacto</Link>
+      <Link href="/#aboutme">Sobre Mi</Link>
+      <Link href="/#proyects">Proyectos</Link>
+      <Link href="/#tops">Contacto</Link>
     </div>
     <Link href="#contact">
       <CyberButton>Contacto</CyberButton>    

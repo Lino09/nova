@@ -26,7 +26,7 @@ const DownloadButton = ({ className }: { className: string }) => {
   return (
     <a
       ref={textRef}
-      href="/CV-IanDeNova.pdf"
+      href="/CV-IanDeNova2.pdf"
       className={`${className} flex items-center justify-center relative `}
       download
     >
