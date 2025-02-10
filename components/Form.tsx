@@ -17,7 +17,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-12 w-1/2 border p-8 rounded-lg bg-cyberpunk-ylw text-cyberpunk-blk font-bold"
+      className="flex flex-col gap-12 w-1/2 border-2 p-8 rounded bg-cyberpunk-ble text-cyberpunk-white font-bold"
     >
       <label htmlFor="name" className="flex flex-col">
         <span className="">Nombre</span>
@@ -25,7 +25,7 @@ const Form = () => {
           type="text"
           name="nombre"
           id="name"
-          className=" border-pink-700 bg-opacity-0 bg-white rounded outline-none ring-0 mt-2 p-2 border-y-2 "
+          className=" border-pink-900 bg-opacity-0 bg-white rounded outline-none ring-0 mt-2 p-2 border-y-2 "
         />
       </label>
       <label htmlFor="message" className="flex flex-col">
@@ -33,12 +33,12 @@ const Form = () => {
         <textarea
           name="mensaje"
           id="message"
-          className=" border-pink-700  bg-opacity-0 bg-white rounded outline-none ring-0 mt-2 p-2 border-y-2 "
+          className=" border-pink-900  bg-opacity-0 bg-white rounded outline-none ring-0 mt-2 p-2 border-y-2 "
         ></textarea>
       </label>
       <button
         type="submit"
-        className=" bg-cyberpunk-blk text-cyberpunk-wht font-bold py-2 rounded-xl w-40 mx-auto hover:text-cyberpunk-blk transition-all duration-300 border border-cyberpunk-blk hover:bg-cyberpunk-ble"
+        className=" bg-cyberpunk-blk text-cyberpunk-wht font-bold py-2 rounded-xl w-40 mx-auto hover:text-cyberpunk-blk transition-all duration-300 border border-cyberpunk-blk hover:bg-cyberpunk-ylw"
       >
         Enviar
       </button>
