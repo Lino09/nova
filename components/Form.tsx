@@ -17,7 +17,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-12 w-full md:w-1/2 border-2 px-8 rounded bg-cyberpunk-ble text-cyberpunk-white font-bold"
+      className="flex flex-col gap-12 w-full md:w-1/2 border-2 p-8 rounded bg-cyberpunk-ble text-cyberpunk-white font-bold"
     >
       <label htmlFor="name" className="flex flex-col">
         <span className="">Nombre</span>
