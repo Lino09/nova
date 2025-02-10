@@ -36,16 +36,17 @@ export default function Home() {
   return (
     <div className="wide-parent min-h-screen">
       <main className="section relative">
-        <section className="mt-24 flex flex-col items-center md:flex-row">
-          <div className="w-3/5 flex flex-col bg-opacity-10">
+        <section className="mt-24 flex flex-col items-center md:flex-row gap-4 md:gap-0">
+          <div className="w-full md:w-3/5 flex flex-col bg-opacity-10">
             <span
-              className={`text-4xl text-center font-bold opacity-65 ${orbitron.className}`}
+              className={`text-2xl md:text-4xl text-center font-bold opacity-65 ${orbitron.className}`}
             >
               Arquitecto de Contenido Digital
             </span>
-            <span className="text-center text-8xl mt-8">
+            <span className="text-center text-4xl md:text-8xl mt-8">
               Ian
-              <br />
+              <br className="hidden md:block" />
+              {' '}
               De Nova
             </span>
             <p className="md:w-3/4 mx-auto text-sm mt-16 border-l-4 pl-2 border-cyberpunk-tqs">
@@ -66,7 +67,7 @@ export default function Home() {
           <DownloadButton className="absolute"></DownloadButton>
         </section>
         <section
-          className="w-full mt-24 flex justify-center pt-12"
+          className="w-full mt-24 flex flex-col-reverse items-center md:flex-row justify-center pt-12"
           id="aboutme"
         >
           <Image
@@ -74,11 +75,11 @@ export default function Home() {
             alt="Ian Cyberpunk"
             width={300}
             height={300}
-            className="w-[300px] h-[300px] rounded-full object-cover"
+            className=" w-[300px] h-[300px] rounded-full object-cover mt-8 md:mt-0"
           ></Image>
-          <div className="w-1/2 px-8 flex flex-col">
+          <div className="md:w-1/2 px-8 flex flex-col">
             <GlitchText
-              className={`text-6xl ${shareTechMono.className} uppercase`}
+              className={`text-3xl md:text-6xl ${shareTechMono.className} uppercase mx-auto`}
             >
               Sobre mi
             </GlitchText>
@@ -95,11 +96,10 @@ export default function Home() {
         </section>
         <section className="mt-24 flex flex-col items-center" id="proyects">
           <GlitchText
-            className={`text-6xl ${shareTechMono.className} uppercase`}
+            className={`text-3xl md:text-6xl ${shareTechMono.className} uppercase`}
           >
             Mis Proyectos
           </GlitchText>
-          <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
             <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
               {projects.map(({ title, url, img, bg, description }) => {
                 return (
@@ -130,10 +130,10 @@ export default function Home() {
                 );
               })}
             </div>
-          </div>
+        
         </section>
-        <section className="mt-24 flex flex-col items-center text-sm" id="contact">
-          <GlitchText className="text-6xl mb-12">Contacto</GlitchText>
+        <section className="mt-16 flex flex-col items-center text-sm" id="contact">
+          <GlitchText className="text-3xl md:text-6xl mb-12">Contacto</GlitchText>
           <Form></Form>
         </section>
       </main>
