@@ -133,7 +133,7 @@ export default function Home() {
         
         </section>
         <section className="mt-16 flex flex-col items-center text-sm" id="contact">
-          <GlitchText className="text-3xl md:text-6xl mb-12">Contacto</GlitchText>
+          <GlitchText className={`${shareTechMono.className} uppercase text-3xl md:text-6xl mb-12`}>Contacto</GlitchText>
           <Form></Form>
         </section>
       </main>
