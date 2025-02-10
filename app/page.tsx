@@ -1,7 +1,8 @@
-import { DownloadButton, GlitchText } from "@/components";
+import { DownloadButton, GlitchText, Form} from "@/components";
 import { orbitron, shareTechMono } from "@/app/layout";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Home() {
   const projects = [
@@ -30,6 +31,8 @@ export default function Home() {
         "Creación de contenido gráfico y edición de imágenes para una colección temática de Twitch.",
     },
   ];
+
+
   return (
     <div className="wide-parent min-h-screen">
       <main className="section relative">
@@ -104,7 +107,7 @@ export default function Home() {
                     key={title}
                     className={`${bg} h-[334px] bg-opacity-30 w-60 gap-4 flex flex-col justify-between items-center py-4 rounded-lg border border-white hover:bg-opacity-75 relative group transition-all duration-500`}
                   >
-                    <span className="text-cyberpunk-blk font-semibold text-xl">
+                    <span className="text-cyberpunk-wht group-hover:text-cyberpunk-blk transition-colors  font-semibold text-xl">
                       {title}
                     </span>
                     <Image
@@ -114,7 +117,7 @@ export default function Home() {
                       alt={title}
                       className="transition-opacity duration-500 group-hover:opacity-0"
                     />
-                    <p className="hidden font-semibold text-cyberpunk-blk text-sm px-4 text-center group-hover:block transition-all duration-500 absolute top-1/2 -translate-y-1/2">
+                    <p className="font-semibold text-cyberpunk-blk text-sm px-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-500 absolute top-1/2 -translate-y-1/2">
                       {description}
                     </p>
                     <Link
@@ -128,6 +131,10 @@ export default function Home() {
               })}
             </div>
           </div>
+        </section>
+        <section className="mt-24 flex flex-col items-center text-sm" id="contact">
+          <GlitchText className="text-6xl mb-12">Contacto</GlitchText>
+          <Form></Form>
         </section>
       </main>
     </div>

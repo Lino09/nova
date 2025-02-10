@@ -11,9 +11,9 @@ const Header = () => (
       </Link>
       <Link href="/#aboutme">Sobre Mi</Link>
       <Link href="/#proyects">Proyectos</Link>
-      <Link href="/#tops">Contacto</Link>
+      <Link href="/#contact">Contacto</Link>
     </div>
-    <Link href="#contact">
+    <Link href="/#contact">
       <CyberButton>Contacto</CyberButton>    
     </Link>
 
