@@ -12,7 +12,6 @@ export default async function ProjectPage({
  
   const project = (await params).project
 
-  console.log({project})
   const images = await getCloudinaryImages(project);
   if (!images || images.length === 0) {
     return notFound();

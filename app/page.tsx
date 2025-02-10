@@ -35,10 +35,10 @@ export default function Home() {
               <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
               <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
             </div>
-            <div className="bg-cyberpunk-ylw  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
-              <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
-              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg' width={200} height={200} alt='Lego Collection'></Image>
-              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/lego-collection'}>Ver Más</Link>
+            <div className="bg-cyberpunk-ylw  bg-opacity-30 w-60 gap-4 flex flex-col items-center justify-between py-4 rounded-lg border border-white hover:bg-opacity-75">
+              <span className="text-cyberpunk-blk font-semibold text-xl">Consultora Temachtli</span>
+              <Image src='https://res.cloudinary.com/dtzk6eano/image/upload/v1739155774/temachtli/mbsm8it1ccttl8wcarg5.png' width={200} height={200} alt='Lego Collection'></Image>
+              <Link className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk" href={'/project/temachtli'}>Ver Más</Link>
             </div>
             <div className="bg-cyberpunk-ble  bg-opacity-30 w-60 gap-4 flex flex-col items-center py-4 rounded-lg border border-white hover:bg-opacity-75">
               <span className="text-cyberpunk-blk font-semibold text-xl">Lego Collection</span>
