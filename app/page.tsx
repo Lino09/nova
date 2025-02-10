@@ -94,7 +94,6 @@ export default function Home() {
           <GlitchText
             className={`text-6xl ${shareTechMono.className} uppercase`}
           >
-            {" "}
             Mis Proyectos
           </GlitchText>
           <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
