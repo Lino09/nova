@@ -1,13 +1,17 @@
-const CyberButton = ({children}:{children:string}) => (
+const CyberButton = ({ children }: { children: string }) => (
   <>
-<button className="cybr-btn">
-  {children}<span aria-hidden>_</span>
-  <span aria-hidden className="cybr-btn__glitch">{children}_</span>
-  <span aria-hidden className="cybr-btn__tag">IDN</span>
-</button>  
-<style>
-  {
-    `
+    <button className="cybr-btn">
+      {children}
+      <span aria-hidden>_</span>
+      <span aria-hidden className="cybr-btn__glitch">
+        {children}_
+      </span>
+      <span aria-hidden className="cybr-btn__tag">
+        IDN
+      </span>
+    </button>
+    <style>
+      {`
     
 
 .cybr-btn {
@@ -182,10 +186,9 @@ const CyberButton = ({children}:{children:string}) => (
 .cybr-btn:nth-of-type(2) {
   --primary-hue: 260;
 }
-    `
-  }
-</style>
+    `}
+    </style>
   </>
-)
+);
 
 export default CyberButton;

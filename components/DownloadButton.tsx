@@ -1,6 +1,6 @@
-"use client";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
+'use client';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const DownloadButton = ({ className }: { className: string }) => {
   const textRef = useRef(null);
@@ -12,11 +12,10 @@ const DownloadButton = ({ className }: { className: string }) => {
     });
 
     buttonTimeline
-    .to(".pa", { duration: 0.3, '--tw-bg-opacity': 0.6 })
-    .to(".granpa", { duration: 0.5, '--tw-bg-opacity': 0.6 })
-    .to(".granpa", { duration: 0.3, '--tw-bg-opacity': 0.3 })
-    .to(".pa", { duration: 0.5, '--tw-bg-opacity': 0.3 })
-  
+      .to('.pa', { duration: 0.3, '--tw-bg-opacity': 0.6 })
+      .to('.granpa', { duration: 0.5, '--tw-bg-opacity': 0.6 })
+      .to('.granpa', { duration: 0.3, '--tw-bg-opacity': 0.3 })
+      .to('.pa', { duration: 0.5, '--tw-bg-opacity': 0.3 });
 
     return () => {
       buttonTimeline.kill();
@@ -31,8 +30,8 @@ const DownloadButton = ({ className }: { className: string }) => {
       download
     >
       <div className="w-24 h-24 rounded-full bg-cyberpunk-ble flex items-center justify-center granpa absolute z-0 bg-opacity-30"></div>
-        <div className="w-20 h-20 rounded-full bg-cyberpunk-ble flex items-center justify-center pa absolute z-10 bg-opacity-50"></div>
-        <div className="w-16 h-16 rounded-full bg-cyberpunk-ble flex items-center justify-center flex-col font-extrabold text-lg jr absolute z-20">
+      <div className="w-20 h-20 rounded-full bg-cyberpunk-ble flex items-center justify-center pa absolute z-10 bg-opacity-50"></div>
+      <div className="w-16 h-16 rounded-full bg-cyberpunk-ble flex items-center justify-center flex-col font-extrabold text-lg jr absolute z-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

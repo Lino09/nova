@@ -1,5 +1,5 @@
-"use client";
-import { FormEvent } from "react";
+'use client';
+import { FormEvent } from 'react';
 
 const Form = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -10,9 +10,9 @@ const Form = () => {
     const whatsappUrl = `https://wa.me/+525649350721?text=${encodeURIComponent(
       whatsappMessage
     )}`;
-    (event.target as HTMLFormElement).nombre.value = "";
-    (event.target as HTMLFormElement).mensaje.value = "";
-    window.open(whatsappUrl, "_blank");
+    (event.target as HTMLFormElement).nombre.value = '';
+    (event.target as HTMLFormElement).mensaje.value = '';
+    window.open(whatsappUrl, '_blank');
   };
   return (
     <form
