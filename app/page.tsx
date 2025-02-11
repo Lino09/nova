@@ -1,37 +1,35 @@
-import { DownloadButton, GlitchText, Form} from "@/components";
-import { orbitron, shareTechMono } from "@/app/layout";
-import Image from "next/image";
-import Link from "next/link";
-
+import { DownloadButton, GlitchText, Form } from '@/components';
+import { orbitron, shareTechMono } from '@/app/layout';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const projects = [
     {
-      title: "Lego Collection",
-      url: "/project/lego-collection",
-      img: "https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg",
-      bg: "bg-cyberpunk-tqs",
+      title: 'Lego Collection',
+      url: '/project/lego-collection',
+      img: 'https://res.cloudinary.com/dtzk6eano/image/upload/v1739154049/lego-collection/gnyoneug3wooo8irqlle.jpg',
+      bg: 'bg-cyberpunk-tqs',
       description:
-        "Fotografía y edición de una colección de figuras LEGO, destacando detalles, iluminación y composición visual.",
+        'Fotografía y edición de una colección de figuras LEGO, destacando detalles, iluminación y composición visual.',
     },
     {
-      title: "Consultora Temachtli",
-      url: "/project/temachtli",
-      img: "https://res.cloudinary.com/dtzk6eano/image/upload/v1739155774/temachtli/mbsm8it1ccttl8wcarg5.png",
-      bg: "bg-cyberpunk-ylw",
+      title: 'Consultora Temachtli',
+      url: '/project/temachtli',
+      img: 'https://res.cloudinary.com/dtzk6eano/image/upload/v1739155774/temachtli/mbsm8it1ccttl8wcarg5.png',
+      bg: 'bg-cyberpunk-ylw',
       description:
-        "Proyecto de branding y diseño visual para Consultora Temachtli, enfocada en identidad y presencia digital.",
+        'Proyecto de branding y diseño visual para Consultora Temachtli, enfocada en identidad y presencia digital.',
     },
     {
-      title: "Twitch Collection",
-      url: "/project/twich-collection",
-      img: "https://res.cloudinary.com/dtzk6eano/image/upload/v1739157978/twich-collection/cgnd5hbqu7cnt5yv4ayz.jpg",
-      bg: "bg-cyberpunk-ble",
+      title: 'Twitch Collection',
+      url: '/project/twich-collection',
+      img: 'https://res.cloudinary.com/dtzk6eano/image/upload/v1739157978/twich-collection/cgnd5hbqu7cnt5yv4ayz.jpg',
+      bg: 'bg-cyberpunk-ble',
       description:
-        "Creación de contenido gráfico y edición de imágenes para una colección temática de Twitch.",
+        'Creación de contenido gráfico y edición de imágenes para una colección temática de Twitch.',
     },
   ];
-
 
   return (
     <div className="wide-parent min-h-screen">
@@ -45,9 +43,7 @@ export default function Home() {
             </span>
             <span className="text-center text-4xl md:text-8xl mt-8">
               Ian
-              <br className="hidden md:block" />
-              {' '}
-              De Nova
+              <br className="hidden md:block" /> De Nova
             </span>
             <p className="md:w-3/4 mx-auto text-sm mt-16 border-l-4 pl-2 border-cyberpunk-tqs">
               Licenciado en Comunicación con un enfoque en edición de foto y
@@ -100,40 +96,46 @@ export default function Home() {
           >
             Mis Proyectos
           </GlitchText>
-            <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
-              {projects.map(({ title, url, img, bg, description }) => {
-                return (
-                  <div
-                    key={title}
-                    className={`${bg} h-[334px] bg-opacity-30 w-60 gap-4 flex flex-col justify-between items-center py-4 rounded-lg border border-white hover:bg-opacity-75 relative group transition-all duration-500`}
+          <div className="w-full flex justify-center py-16 gap-16 flex-wrap">
+            {projects.map(({ title, url, img, bg, description }) => {
+              return (
+                <div
+                  key={title}
+                  className={`${bg} h-[334px] bg-opacity-30 w-60 gap-4 flex flex-col justify-between items-center py-4 rounded-lg border border-white hover:bg-opacity-75 relative group transition-all duration-500`}
+                >
+                  <span className="text-cyberpunk-wht group-hover:text-cyberpunk-blk transition-colors  font-semibold text-xl">
+                    {title}
+                  </span>
+                  <Image
+                    src={img}
+                    width={200}
+                    height={200}
+                    alt={title}
+                    className="transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <p className="font-semibold text-cyberpunk-blk text-sm px-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-500 absolute top-1/2 -translate-y-1/2">
+                    {description}
+                  </p>
+                  <Link
+                    className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk transition-all duration-300"
+                    href={url}
                   >
-                    <span className="text-cyberpunk-wht group-hover:text-cyberpunk-blk transition-colors  font-semibold text-xl">
-                      {title}
-                    </span>
-                    <Image
-                      src={img}
-                      width={200}
-                      height={200}
-                      alt={title}
-                      className="transition-opacity duration-500 group-hover:opacity-0"
-                    />
-                    <p className="font-semibold text-cyberpunk-blk text-sm px-4 text-center opacity-0 group-hover:opacity-100 transition-all duration-500 absolute top-1/2 -translate-y-1/2">
-                      {description}
-                    </p>
-                    <Link
-                      className="text-cyberpunk-wht bg-cyberpunk-blk px-4 py-2 rounded-xl hover:bg-cyberpunk-ylw hover:text-cyberpunk-blk transition-all duration-300"
-                      href={url}
-                    >
-                      Ver Más
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-        
+                    Ver Más
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </section>
-        <section className="mt-16 flex flex-col items-center text-sm" id="contact">
-          <GlitchText className={`${shareTechMono.className} uppercase text-3xl md:text-6xl mb-12`}>Contacto</GlitchText>
+        <section
+          className="mt-16 flex flex-col items-center text-sm"
+          id="contact"
+        >
+          <GlitchText
+            className={`${shareTechMono.className} uppercase text-3xl md:text-6xl mb-12`}
+          >
+            Contacto
+          </GlitchText>
           <Form></Form>
         </section>
       </main>
