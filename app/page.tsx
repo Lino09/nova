@@ -125,6 +125,10 @@ export default function Home() {
                 </div>
               );
             })}
+            <video width="600" controls>
+              <source src="/teaser.mp4" type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
           </div>
         </section>
         <section
